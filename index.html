@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title>Example</title>
@@ -47,5 +47,37 @@
       </ul>
       <p>&copy; 2016 Instrument</p>
     </footer>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Message</title>
+  </head>
+  <body>
+    <script>
+      // TODO: Add hello code
+      function getMessage(name) {
+        return "Hello, " + name + "...";
+      }
+      const message = getMessage("leedongun");
+      document.write(message);
+
+      function displayMessage2() {
+        document.write("<br>I am 25 years old.");
+      }
+
+      function displayMessage3() {
+        document.write("<br>I love coding");
+      }
+
+      setTimeout(() => {
+        document.write("...Hello again!");
+      }, 3000);
+
+      setTimeout(displayMessage2, 6000);
+      setTimeout(displayMessage3, 9000);
+    </script>
   </body>
 </html>
