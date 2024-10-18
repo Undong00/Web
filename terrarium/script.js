@@ -26,7 +26,7 @@ console.log(candy);
 
 
 function dragElement(terrariumElement) {
-    let highestZIndex = 0;
+    let highestZIndex = 1;
     let pos1 = 0,
         pos2 = 0,
         pos3 = 0,
@@ -61,6 +61,7 @@ function dragElement(terrariumElement) {
     function bringToFront() {
         highestZIndex++;
         terrariumElement.style.zIndex = highestZIndex;
+
     }
 
 
