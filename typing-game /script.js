@@ -14,9 +14,11 @@ let startTime = Date.now();
 const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
+const startButton = document.getElementById('start');
 
 
 document.getElementById('start').addEventListener('click', () => {
+    startButton.disabled = true; // 게임 시작 시 버튼 비활성화
     const quoteIndex = Math.floor(Math.random() * quotes.length); // 무작위 인덱스 생성
     const quote = quotes[quoteIndex]; // 무작위 인덱스 값으로 인용문 선택
     words = quote.split(' '); // 공백 문자를 기준으로 words 배열에 저장
@@ -41,7 +43,8 @@ typedValueElement.addEventListener('input', () => {
         const elapsedTime = new Date().getTime() - startTime; // 타이핑에 소요된 시간 계산
         const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds.`; // 타이핑 완료 메시지
         messageElement.innerText = message; //생성된 메시지 화면에 표시
-        typedValueElement.disabled = true
+        typedValueElement.disabled = true; // 입력 필드 비활성화
+        startButton.disabled = false; // 게임 종료 시 버튼 활성화
         typedValueElement.removeEventListener('input', handleInput);
     } else if (typedValue.endsWith(' ') && typedValue.trim() === currentWord) { // 입력된 값이 공백으로 끝났는지와공백을 제거한 값이 현재 단어와 일치하는 지 확인
         typedValueElement.value = ''; // 입력 필드 초기화하여 다음 단어 입력 준비
