@@ -66,7 +66,7 @@
 
 
 // }
-
+// 6주차 과제 
 function displayCandy() {
     let candy = ['jellybeans'];
     function addCandy(candyType) {
