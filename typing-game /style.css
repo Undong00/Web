@@ -1,0 +1,59 @@
+.highlight {
+  background-color: yellow;
+}
+.error {
+  background-color: lightcoral;
+  border: red;
+}
+
+/* 기본 페이지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+
+/* 제목 스타일 */
+h1 {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* 문단 스타일 */
+p {
+  font-size: 1.2em;
+  color: grey;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* 입력 필드 스타일 */
+input {
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 버튼 스타일 */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: grey;
+}
