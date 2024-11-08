@@ -104,7 +104,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 560px;
+  min-height: 560px;
+  max-height: 1080px;
   background-color: #f8f8f8;
   margin: 0;
 }
@@ -120,6 +121,7 @@ body {
   padding: 30px;
   width: 100%;
   max-width: 350px;
+  min-width: 350px;
 }
 
 img {
@@ -165,16 +167,18 @@ input {
 
 button {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #007bff;
   color: white;
-  padding: 10px 15px;
-  width: 75px;
+  padding: 10px;
+  width: 100%; /* 버튼을 중앙에 맞추기 위해 부모 너비를 맞춤 */
+  max-width: 75px; /* 최대 너비 설정 */
   border: none;
   border-radius: 5px;
   font-size: 1rem;
+  margin: 0 auto; /* 중앙 정렬 */
 }
 
 button:hover {

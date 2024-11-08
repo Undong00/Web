@@ -16,9 +16,18 @@
       <div>
         <h2>New? Add your Information</h2>
       </div>
+      <!-- 각 지역의 입력 필드 추가 -->
       <div>
-        <label for="region">Region Name</label>
-        <input type="text" id="region" required class="region-name" />
+        <label for="region1">Region Name 1</label>
+        <input type="text" id="region1" required class="region-name" />
+      </div>
+      <div>
+        <label for="region2">Region Name 2</label>
+        <input type="text" id="region2" required class="region-name" />
+      </div>
+      <div>
+        <label for="region3">Region Name 3</label>
+        <input type="text" id="region3" required class="region-name" />
       </div>
       <div>
         <label for="api">Your API Key from tmrow</label>
@@ -26,19 +35,45 @@
       </div>
       <button class="search-btn">Submit</button>
     </form>
-    <div class="result">
+
+    <!-- 각 결과를 표시하는 컨테이너 추가 -->
+    <div class="results-container">
       <div class="loading">loading...</div>
       <div class="errors"></div>
-      <div class="data"></div>
-      <div class="result-container">
-        <p><strong>Region: </strong><span class="my-region"></span></p>
-        <p><strong>Carbon Usage: </strong><span class="carbon-usage"></span></p>
+
+      <!-- 개별 결과 표시 -->
+      <div class="result-container" id="result-region1">
+        <p><strong>Region 1: </strong><span class="my-region1"></span></p>
+        <p>
+          <strong>Carbon Usage: </strong><span class="carbon-usage1"></span>
+        </p>
         <p>
           <strong>Fossil Fuel Percentage: </strong
-          ><span class="fossil-fuel"></span>
+          ><span class="fossil-fuel1"></span>
         </p>
       </div>
-      <button class="clear-btn">Change region</button>
+      <div class="result-container" id="result-region2">
+        <p><strong>Region 2: </strong><span class="my-region2"></span></p>
+        <p>
+          <strong>Carbon Usage: </strong><span class="carbon-usage2"></span>
+        </p>
+        <p>
+          <strong>Fossil Fuel Percentage: </strong
+          ><span class="fossil-fuel2"></span>
+        </p>
+      </div>
+      <div class="result-container" id="result-region3">
+        <p><strong>Region 3: </strong><span class="my-region3"></span></p>
+        <p>
+          <strong>Carbon Usage: </strong><span class="carbon-usage3"></span>
+        </p>
+        <p>
+          <strong>Fossil Fuel Percentage: </strong
+          ><span class="fossil-fuel3"></span>
+        </p>
+      </div>
     </div>
+    <button class="clear-btn">Change region</button>
+    <script src="main.js"></script>
   </body>
 </html>
