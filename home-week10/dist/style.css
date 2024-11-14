@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #e8f0fe;
+  color: #2c3e50;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+select,
+button {
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 5px;
+  border: 1px solid #34495e;
+  border-radius: 5px;
+  background-color: #f9fafc;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+select:hover,
+button:hover {
+  background-color: #dfe6e9;
+  cursor: pointer;
+}
+
+p {
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 10px 0;
+}
+
+p.up {
+  color: #27ae60;
+  transform: scale(1.1); /* 가격 상승 시 크기 증가 효과 */
+}
+
+p.down {
+  color: #e74c3c;
+  transform: scale(0.9); /* 가격 하락 시 크기 감소 효과 */
+}
+
+#saved-items div {
+  font-size: 16px;
+  margin: 8px;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#saved-items div:hover {
+  background-color: #dfe6e9;
+  transform: translateY(-3px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.input {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.input:hover {
+  border-color: #90a4ae;
+  background-color: #f9fafc;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b5998;
+  background-color: #e3f2fd;
+  box-shadow: 0 0 5px rgba(59, 89, 152, 0.3);
+}

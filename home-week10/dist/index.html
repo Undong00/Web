@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글로벌 환율 계산기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>🙃 머니머니해도 머니가 조아</h1>
+
+      <div>
+        <h2>환율</h2>
+        <select id="currency-selector">
+          <option value="USD">미국 달러 (USD)</option>
+          <option value="EUR">유로 (EUR)</option>
+          <option value="JPY">일본 엔화 (JPY)</option>
+        </select>
+        <p id="exchange-rate">통화를 선택하세요</p>
+      </div>
+
+      <div>
+        <h2>암호화폐 가격</h2>
+        <select id="crypto-selector">
+          <option value="bitcoin">비트코인 (BTC)</option>
+          <option value="ethereum">이더리움 (ETH)</option>
+          <option value="ripple">리플 (XRP)</option>
+        </select>
+        <p id="crypto-price">암호화폐를 선택하세요</p>
+      </div>
+
+      <div>
+        <h2>환율 계산기</h2>
+        <input
+          type="number"
+          id="amount"
+          placeholder="금액 입력"
+          class="input"
+        />
+        <select id="from-currency">
+          <option value="USD">미국 달러 (USD)</option>
+          <option value="KRW">한국 원화 (KRW)</option>
+          <option value="EUR">유로 (EUR)</option>
+          <option value="JPY">일본 엔화 (JPY)</option>
+          <option value="GBP">영국 파운드 (GBP)</option>
+        </select>
+        <span>➡️</span>
+        <select id="to-currency">
+          <option value="KRW">한국 원화 (KRW)</option>
+          <option value="USD">미국 달러 (USD)</option>
+          <option value="EUR">유로 (EUR)</option>
+          <option value="JPY">일본 엔화 (JPY)</option>
+          <option value="GBP">영국 파운드 (GBP)</option>
+        </select>
+        <button id="convert-button">환율 계산</button>
+        <p id="conversion-result">결과가 여기에 표시됩니다</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
